@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Message</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="text" href="/">Back</a>
+    <div class="form-container">
+      <form id="form" method="POST" action="/send">
+        <input
+          class="input"
+          name="name"
+          type="text"
+          placeholder="Name"
+          autocomplete="off"
+          required
+        />
+        <input
+          class="input"
+          name="message"
+          type="text"
+          placeholder="Message"
+          autocomplete="off"
+          required
+        />
+        <select class="select" name="feeling">
+          <option hidden selected value="no">How are you feeling?</option>
+          <option value="an amazing">Amazing</option>
+          <option value="a good">Good</option>
+          <option value="an okay">Okay</option>
+          <option value="a bad">Bad</option>
+          <option value="a terrible">Terrible</option>
+        </select>
+        <input class="btn" type="submit" value="Send" />
+      </form>
+    </div>
+  </body>
+</html>
